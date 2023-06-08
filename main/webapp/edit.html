@@ -11,11 +11,11 @@
 <div>
     <form class="w-50 p-5 shadow rounded text-center position-absolute top-50 start-50 translate-middle row">
         <p class="font-weight-bold">Редактировать запись</p>
-        <input class="mt-2 rounded" id="Bandname" type="text" placeholder="Bandname" value="<%=((Series) request.getAttribute('Band')).getBandname()%>">
-        <input class="mt-2 rounded" id="hometown" type="text" placeholder=hometown value="<%=((Series) request.getAttribute('Band')).getHometown()%>">
-        <input class="mt-2 rounded" id="genre" type="text" placeholder="genre" value="<%=((Series) request.getAttribute('Band')).getGenre()%>">
-        <input class="mt-2 rounded" id="last_ablbum" type="number" placeholder="last_ablbum" value="<%=((Series) request.getAttribute('Band')).getlast_ablbum()%>">
-        <input class="mt-2 rounded" id="Singer" type="number" placeholder="Singer" value="<%=((Series) request.getAttribute('Band')).getSinger()%>">
+        <input class="mt-2 rounded" id="Bandname" type="text" placeholder="Bandname" value="<%=((Bands) request.getAttribute('Band')).getBandname()%>">
+        <input class="mt-2 rounded" id="hometown" type="text" placeholder=hometown value="<%=((Bands) request.getAttribute('Band')).getHometown()%>">
+        <input class="mt-2 rounded" id="genre" type="text" placeholder="genre" value="<%=((Bands) request.getAttribute('Band')).getGenre()%>">
+        <input class="mt-2 rounded" id="last_ablbum" type="number" placeholder="last_ablbum" value="<%=((Bands) request.getAttribute('Band')).getlast_ablbum()%>">
+        <input class="mt-2 rounded" id="Singer" type="number" placeholder="Singer" value="<%=((Bands) request.getAttribute('Band')).getSinger()%>">
         <button type="button" class="btn btn-success mt-2 rounded" onclick="Edit()">Сохранить</button>
     </form>
 </div>
