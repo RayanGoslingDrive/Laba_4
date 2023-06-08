@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>hate.worldwide.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/read</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SecondServlet</servlet-name>
+        <servlet-class>hate.worldwide.SecondServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SecondServlet</servlet-name>
+        <url-pattern>/write</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Saver</servlet-name>
+        <servlet-class>hate.worldwide.Saver</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Saver</servlet-name>
+        <url-pattern>/save</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Edit</servlet-name>
+        <servlet-class>hate.worldwide.Edit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Edit</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+        <servlet-class>hate.worldwide.Delete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+</web-app>
